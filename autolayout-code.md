@@ -15,16 +15,22 @@ view.translatesAutoresizingMaskIntoConstraints = false
 // centered on X (horizontally)
 yourView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 
+// anchor to right+ 
+yourView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 100),
+
+// anchor to left+
+yourView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 100),
 ```
+
 ## anchoring vertically
 ```swift
 // centered on Y (vertically)
 yourView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 
-// anchor to top
+// anchor to top+
 yourView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
 
-// anchor to bottom
+// anchor to bottom+
 yourView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
 ```
 
