@@ -15,11 +15,15 @@ view.translatesAutoresizingMaskIntoConstraints = false
 // centered on X (horizontally)
 yourView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 
-// anchor to right+ 
-yourView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 100),
-
 // anchor to left+
-yourView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 100),
+// some languages read from right to left so apple recommends using
+// trailingAnchor instead of leftAnchor
+yourView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
+
+// anchor to right+
+// some languages read from right to left so apple recommends using
+// trailingAnchor instead of rightAnchor
+yourView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 100),
 ```
 
 ## anchoring vertically
