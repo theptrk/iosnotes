@@ -28,16 +28,9 @@ imageView.widthAnchor.constraint(equalToConstant: 120).isActive = true
 imageView.heightAnchor.constraint(equalToConstant: 120).isActive = true
 ```
 
-## refactoring layout constraint setting
+## use the solution to avoid rookie mistake #1
+from [rookie mistake #1](https://github.com/theptrk/iosnotes/blob/master/autolayout-rookie-mistake.md)
 ```swift
-// lets create a function that deals with the issue of setting
-// translatesAutoresizingMaskIntoConstraints to false and setting constraints to "active"
-func setLayoutConstraints(view: UIView, constraints: [NSLayoutConstraint]) {
-    view.translatesAutoresizingMaskIntoConstraints = false
-    constraints.forEach({constraint in constraint.isActive = true })
-}
-
-// now your views can set constraints like this
 setLayoutConstraints(view: imageView, constraints: [
     imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
     imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),

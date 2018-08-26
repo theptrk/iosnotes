@@ -40,13 +40,6 @@ yourView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive =
 yourView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
 ```
 
-## solution to rookie mistakes
-```swift
-func setLayoutConstraints(view: UIView, constraints: [NSLayoutConstraint]) {
-    view.translatesAutoresizingMaskIntoConstraints = false
-    constraints.forEach({constraint in constraint.isActive = true })
-}
-
-```
-
+## avoid rookie mistake #1
+[link](https://github.com/theptrk/iosnotes/blob/master/autolayout-rookie-mistake.md)
 [blog](https://theptrk.com/2018/08/26/forgetting-to-set-translatesautoresizingmaskintoconstraints-to-false/)
