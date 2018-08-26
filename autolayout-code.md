@@ -20,12 +20,12 @@ yourView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 // anchor to left+
 // some languages read from right to left so apple recommends using
 // trailingAnchor instead of leftAnchor
-yourView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100).isActive = true,
+yourView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 100).isActive = true,
 
-// anchor to right+
+// anchor to right+ (notice the negative value)
 // some languages read from right to left so apple recommends using
 // trailingAnchor instead of rightAnchor
-yourView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 100).isActive = true,
+yourView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -100).isActive = true,
 ```
 
 ## anchoring vertically
