@@ -26,6 +26,9 @@ Landscape mode
 
 ```
 
+![Ice Bear Portrait](/assets/ice-bear-portrait.png)
+![Ice Bear Landscape](/assets/ice-bear-landscape.png)
+
 ## strategy - use two UIViews
 
 ```swift
