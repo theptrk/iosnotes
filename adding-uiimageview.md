@@ -1,7 +1,7 @@
 # Adding UIImageView
 
 ## create a UIImageView 
-```
+```swift
 // step 1: create a UIImage
 let myImage = UIImage(named:"icebear")
 
@@ -14,7 +14,7 @@ view.addSubview(myImageView)
 ```
 
 ## use autolayout
-```
+```swift
 // step 1: set this manually
 // when you use interface builder, this is set automatically
 imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -29,7 +29,7 @@ imageView.heightAnchor.constraint(equalToConstant: 120).isActive = true
 ```
 
 ## refactoring layout constraint setting
-```
+```swift
 // lets create a function that deals with the issue of setting
 // translatesAutoresizingMaskIntoConstraints to false and setting constraints to "active"
 func setLayoutConstraints(view: UIView, constraints: [NSLayoutConstraint]) {
