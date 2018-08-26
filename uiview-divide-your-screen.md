@@ -1,6 +1,7 @@
-# uiview - divide your screen
-Say you want to split your screen in half vertically 
-AND have it justify correctly on orientation change
+# UIView - divide your screen
+Say you want to: 
+- split your screen in half vertically 
+- have an image justified to be half of the screen correctly on orientation change
 ```
 Portrait mode
      _______________
@@ -29,7 +30,7 @@ Landscape mode
 ![Ice Bear Portrait](/assets/ice-bear-portrait.png)
 ![Ice Bear Landscape](/assets/ice-bear-landscape.png)
 
-## strategy - use two UIViews
+## Strategy - use two UIViews
 
 ```swift
 // step 1: create your "top half" view
