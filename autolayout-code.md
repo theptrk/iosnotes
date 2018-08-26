@@ -8,7 +8,7 @@ view.translatesAutoresizingMaskIntoConstraints = false
 yourView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 100).isActive = true,
 
 // avoid rookie mistake 3:
-// remember to set both constraints and size
+// remember to set both X and Y constraints
 .width, .height, {leading,trailing, centerX}, {top, bottom, centerY}
 ```
 
