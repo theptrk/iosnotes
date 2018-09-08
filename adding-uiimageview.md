@@ -29,7 +29,7 @@ imageView.heightAnchor.constraint(equalToConstant: 120).isActive = true
 ```
 
 ## use the solution to avoid rookie mistake #1
-from [rookie mistake #1](https://github.com/theptrk/iosnotes/blob/master/autolayout-rookie-mistake.md)
+from [rookie mistake #1](https://github.com/theptrk/iosnotes/blob/master/setup-layout-constraints.md)
 ```swift
 setLayoutConstraints(view: imageView, constraints: [
     imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
