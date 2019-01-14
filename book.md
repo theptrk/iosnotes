@@ -4,15 +4,16 @@
 * [Xcode](Xcode)
 
 # UINavigationController
-## UINavigationController checklist
-- [ ] add a self.title
 
-## How to embed VC in NagivationController
+## UINavigationController checklist
+- [ ] assign self.title
+
+## How to embed VC in NagivationController (xib, storyboard)
 - step 1: Go to storyboard.swift and click on VC
 - step 2: Editor Menu -> Embed In -> Navigation Controller
 
 ## How to hide the navigation bar + status bar + home indicator on tap
-- great when viewing images
+This technique is great for viewing images.
 ```swift
 override var prefersStatusBarHidden: Bool {
     return navigationController?.hidesBarsOnTap ?? false
@@ -33,10 +34,10 @@ override func viewWillDisappear(_ animated: Bool) {
 # UITableView
 ## How to enable large titles in table view
 ```swift
-// step 1: only put this in the first screen on your app
+// step 1: only put this in the first screen on your app or table view flow
 navigationController?.navigationBar.prefersLargeTitles = true
 
-// step 2: this requires this stupid property in your other screens though
+// step 2: other sub screens require this property since the code above affects all screens
 navigationItem.largeTitleDisplayMode = .never
 ```
 
