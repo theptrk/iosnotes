@@ -41,7 +41,6 @@ navigationController?.navigationBar.prefersLargeTitles = true
 navigationItem.largeTitleDisplayMode = .never
 ```
 
-
 # Xcode
 ## How to import assets into assets catalog
 - step 1: save files as `france.png`, `france@2x.png`, `france@3x.png`
