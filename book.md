@@ -1,8 +1,9 @@
 # Contents
-- UINavigationController
-- UITableView 
+* [UINavigationController](UINavigationController)
+* [UITableView](UITableView)
+* [Xcode](Xcode)
 
-# === UINavigationController ===
+# UINavigationController
 ## UINavigationController checklist
 - [ ] add a self.title
 
@@ -28,14 +29,8 @@ override func viewWillDisappear(_ animated: Bool) {
     navigationController?.hidesBarsOnTap = false
 }
 ```
-# ==============================
 
-## How to import assets into assets catalog
-- step 1: save files as `france.png`, `france@2x.png`, `france@3x.png`
-- step 2: drag and drop into `Assets.xcassets`
-
-
-# === UITableView ===
+# UITableView
 ## How to enable large titles in table view
 ```swift
 // step 1: only put this in the first screen on your app
@@ -44,6 +39,9 @@ navigationController?.navigationBar.prefersLargeTitles = true
 // step 2: this requires this stupid property in your other screens though
 navigationItem.largeTitleDisplayMode = .never
 ```
-# ==============================
 
 
+# Xcode
+## How to import assets into assets catalog
+- step 1: save files as `france.png`, `france@2x.png`, `france@3x.png`
+- step 2: drag and drop into `Assets.xcassets`
